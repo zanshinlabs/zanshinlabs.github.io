@@ -1,0 +1,15 @@
+User-Agent: *
+
+Disallow: /css
+Disallow: /fonts
+Disallow: /images
+Disallow: /js
+Disallow: /fonts
+Disallow: /assets
+Dissalow: /downloads
+
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self
+
+Allow: /
