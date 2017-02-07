@@ -3,7 +3,7 @@
 body {
     /* padding-top: 10px;  due to the fixed navbar */
     background-color: #ffffff;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #404040;
@@ -12,15 +12,17 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+h1, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #2bd1a0;
 }
 
 h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 800;
+    color: #2bd1a0;
 }
 
 i {
@@ -43,11 +45,11 @@ b {
     padding-right: 25px;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary .active, .open > .dropdown-toggle .btn-primary {
     background: #338479;
 }
 
-.btn-primary:active, .btn-primary.active {
+.btn-primary:active, .btn-primary .active {
     background: #338479;
     box-shadow: none;
 }
@@ -114,6 +116,11 @@ a:after {
     margin-bottom: 40px;
 }
 
+.pad-msg{
+    padding-top: 30%;
+}
+
+
 .testimonial {
     padding: 30px;
     font-size: 12px;
@@ -123,11 +130,12 @@ a:after {
 }
 
 .testimonial p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 100;
     font-style: italic;
     text-align: left;
-    line-height: 21px;
+    line-height: 22px;
 }
 
 .testimonial-ref{
@@ -151,11 +159,9 @@ a:after {
     color: #404040;
 }
 
-
-
 .heropage {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 130px;
+    padding-top: 15%;
 	background-attachment: relative;
 	background-position: center center;
 	width: 100%;
@@ -174,7 +180,7 @@ a:after {
 }
 
 .heropage h1{
-    font-weight: 100;
+    font-weight: 300;
 	font-size: 40px;
     margin-bottom: -2px;
     color: #404040;
@@ -206,27 +212,22 @@ a:after {
 }
 
 @media (max-width: 543px){
-.heropage{
-    margin-top: 10px;
-    }
-    
-.heropage .marquee-top h1 {
-    margin-bottom: -10px;
+.heropage h1{
     font-weight: 300;
-    font-size: 20px;
-	color: #404040;
+	font-size: 20px;
+    margin-bottom: -2px;
+    color: #404040;
     }
 }
 
-@media (min-width: 544px) and (max-width: 767px){
-    
-.heropage .marquee-top h1 {
-    margin-bottom: -10px;
+@media (min-width: 544px) and (max-width: 767px){   
+
+.heropage h1{
     font-weight: 300;
-    font-size: 20px;
-	color: #404040;
+	font-size: 30px;
+    margin-bottom: -2px;
+    color: #404040;
     }
-                
 }
 
 
@@ -243,19 +244,7 @@ a:after {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
-.heropage .marquee-middle h1 {
-	color: #2bd1a0;
-	font-size: 160px;
-	font-weight: 900;
-	letter-spacing: 1px;
-    }
 }
 
 @media (min-width: 1200px) { 
-.heropage .marquee-middle h1 {
-	color: #2bd1a0;
-	font-size: 160px;
-	font-weight: 900;
-	letter-spacing: 1px;
-    }
 }
