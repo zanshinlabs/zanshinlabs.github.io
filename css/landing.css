@@ -15,25 +15,25 @@ body {
 h1, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #2bd1a0;
+    color: #42b97d;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 800;
-    color: #2bd1a0;
+    color: #42b97d;
 }
 
 i {
 	margin: 8px;
-	color: #2bd1a0; 
+	color: #42b97d; 
 }
 
 b {
     font-weight: 800;
     margin: -1px;
-	color: #2bd1a0;
+	color: #42b97d;
 }
 
 .btn-primary {
