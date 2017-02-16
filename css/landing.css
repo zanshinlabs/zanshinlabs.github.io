@@ -1,7 +1,7 @@
 /* Copyright 2016, Zanshin Labs Ltd  */
 
 body {
-    /* padding-top: 10px;  due to the fixed navbar */
+    /*padding-top: 10px;   due to the fixed navbar */
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -23,6 +23,7 @@ h2 {
     font-size: 16px;
     font-weight: 800;
     color: #42b97d;
+    text-transform: uppercase;
 }
 
 i {
@@ -36,6 +37,10 @@ b {
 	color: #42b97d;
 }
 
+.btn .btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
 .btn-primary {
     background: #42b97d;
     color: #ffffff;
@@ -43,6 +48,7 @@ b {
     font-weight: 700;
     padding-left: 25px;
     padding-right: 25px;
+    border-color: #42b97d;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary .active, .open > .dropdown-toggle .btn-primary {
@@ -120,6 +126,16 @@ a:after {
     padding-top: 30%;
 }
 
+.service{
+    /* border-color: #eaeaea;*/
+    border-color: #ffffff;
+    border-width: 0.5px;
+    border-style: solid;
+    /* border-radius: 10px;*/
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    min-height: 250px;
+}
 
 .testimonial {
     padding: 30px;
@@ -218,21 +234,32 @@ a:after {
     margin-bottom: -2px;
     color: #404040;
     }
+
+.service{
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
 }
 
 @media (min-width: 544px) and (max-width: 767px){   
-
 .heropage h1{
     font-weight: 300;
 	font-size: 30px;
     margin-bottom: -2px;
     color: #404040;
     }
+    
+.service{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    min-height: 20px;
+}
+
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) { 
-    
 .btn-primary {
     background: #42b97d;
     color: #ffffff;
