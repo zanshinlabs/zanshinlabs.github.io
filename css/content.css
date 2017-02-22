@@ -39,6 +39,7 @@ b {
 
 .navbar-default {
     padding-top: 10px;
+    padding-bottom: 12px;
 	background-color: #ffffff;
 	border-color: transparent;
     color: #42b97d;
@@ -271,14 +272,14 @@ a:after {
 @media (max-width: 543px){
 .navbar-collapse {
     border-bottom: 2px solid;
-}
+    }
 
 }
 
 @media (min-width: 544px) and (max-width: 767px){  
     .navbar-collapse {
     border-bottom: 2px solid;
-}
+    }
 }
 
 
