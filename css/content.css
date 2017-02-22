@@ -1,7 +1,7 @@
 /* Copyright 2016, Zanshin Labs Ltd  */
 
 body {
-    /*padding-top: 10px;   due to the fixed navbar */
+    padding-top: 40px;   /* due to the fixed navbar */
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -37,6 +37,31 @@ b {
 	color: #42b97d;
 }
 
+.navbar-default {
+    padding-top: 10px;
+	background-color: #ffffff;
+	border-color: transparent;
+    color: #42b97d;
+}
+
+.navbar-default .navbar-brand {
+	color: #42b97d;
+}
+
+.navbar-default .navbar-brand > b {
+    font-weight: 400;
+	color: #42b97d;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+    font-weight: 400;
+	color: #42b97d;
+}
+
+
+
+
 .btn .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
@@ -48,7 +73,6 @@ b {
     font-weight: 700;
     padding-left: 25px;
     padding-right: 25px;
-    border-color: #42b97d;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary .active, .open > .dropdown-toggle .btn-primary {
@@ -60,27 +84,11 @@ b {
     box-shadow: none;
 }
 
-.btn-default {
-    background: #ffffff;
-    color: #42b97d;
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-color: #42b97d;
-}
-
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default .active, .open > .dropdown-toggle .btn-default {
-    background: #ffffff;
-}
-
-.btn-default:active, .btn-default .active {
-    background: #338479;
-    box-shadow: none;
-}
 
 /* Links */
 a {
+    font-weight: 700;
+    font-size: 12px;
     color: #42b97d;
     word-wrap: break-word;
 
@@ -111,7 +119,7 @@ a:after {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #42b97d;
+    border-top: 1px solid #2bd1a0;
     padding: 0;
 }
 
@@ -144,12 +152,27 @@ a:after {
     padding-top: 30%;
 }
 
+.content_entry{
+    padding-bottom: 25px;   
+}
+
+.content_title{
+    margin: 0 0 0 0px;
+	font-weight: 400;
+    padding-bottom: 0px;
+}
+
+.authorship{
+    padding-top: 0px;
+    margin-top: 0px;
+	font-weight: 100;
+}
+
 .service{
-    /* border-color: #eaeaea;*/
-    border-color: #ffffff;
+    border-color: #42b97d;
     border-width: 0.5px;
     border-style: solid;
-    /* border-radius: 10px;*/
+    border-radius: 10px;
     padding-bottom: 25px;
     margin-bottom: 20px;
     min-height: 250px;
@@ -183,14 +206,6 @@ a:after {
     font-weight: 700;
     font-style: normal;
     text-align: right;
-}
-
-.testimonial-ref a {
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    text-align: right;
-    color: #42b97d;
 }
 
 .testimonial-ref p .ref-role  {
@@ -254,46 +269,20 @@ a:after {
 }
 
 @media (max-width: 543px){
-.heropage h1{
-    font-weight: 300;
-	font-size: 20px;
-    margin-bottom: -2px;
-    color: #404040;
-    }
-
-.service{
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-    min-height: 20px;
-}
+.navbar-collapse {
+    border-bottom: 2px solid;
 }
 
-@media (min-width: 544px) and (max-width: 767px){   
-.heropage h1{
-    font-weight: 300;
-	font-size: 30px;
-    margin-bottom: -2px;
-    color: #404040;
-    }
-    
-.service{
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    min-height: 20px;
 }
 
+@media (min-width: 544px) and (max-width: 767px){  
+    .navbar-collapse {
+    border-bottom: 2px solid;
+}
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) { 
-.btn-primary {
-    background: #42b97d;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
