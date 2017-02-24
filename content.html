@@ -15,6 +15,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this site -->
+    <link href="css/base.css" rel="stylesheet">
+    
+    <!-- Custom styles for this page -->
     <link href="css/content.css" rel="stylesheet">
 
     <!-- Fonts from Google Fonts -->
@@ -41,7 +44,7 @@
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#zanshin-navbar" aria-expanded="false">
@@ -51,20 +54,21 @@
                 </button>
                 <a class="navbar-left" href="index.html"><img src="images/zl_logo_main_A02.png" alt="Zanshin Labs" class="image-responsive" width="150"></a>
             </div>
-
+            
             <div class="collapse navbar-collapse" id="zanshin-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7">Subscribe to our newsletter</a></li>
-                    <li> </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+                <div class="navbar-right navbar-edge">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"> Home</a></li>
+                    </ul>
+                
+                    <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-default navbar-btn" role="button" target="_blank"> Join our Newsletter</a>
+                
+                </div>
         </div>
     </nav>
 
     
-    <div class="container">
+    <div class="container" id="nl_issues">
         <div class="row mt-50">
             <div class="col-sm-10 col-sm-offset-1 centered">
                 <h2 class="mb">Newsletter issues</h2>
@@ -180,10 +184,16 @@
                 </div>
             </div>
         </div>
+        
+        <div class="row centered mb">
+            <div class="col-sm-4 col-sm-offset-4">
+                <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-primary navbar-btn" role="button" target="_blank"> Join our Newsletter</a>
+            </div>
+        </div>
     </div>
     
-    <div class="container">
-        <div class="row mt-50">
+    <div class="container" id="presentations">
+        <div class="row mt-50" >
             <div class="col-sm-10 col-sm-offset-1 centered">
                 <h2 class="mb">Presentations</h2>
             </div>
@@ -278,7 +288,7 @@
         
     </div>
     
-    <div class="container">
+    <div class="container" id="articles">
         <div class="row mt-50">
             <div class="col-sm-10 col-sm-offset-1 centered">
                 <h2 class="mb">Articles</h2>

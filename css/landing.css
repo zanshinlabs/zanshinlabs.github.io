@@ -1,148 +1,10 @@
-/* Copyright 2016, Zanshin Labs Ltd  */
+/* Copyright 2016-2017, Zanshin Labs Ltd  */
 
-body {
-    /*padding-top: 10px;   due to the fixed navbar */
-    background-color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #404040;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-}
-
-h1, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #42b97d;
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    color: #42b97d;
-    text-transform: uppercase;
-}
-
-i {
-	margin: 8px;
-	color: #42b97d; 
-}
-
-b {
-    font-weight: 800;
-    margin: -1px;
-	color: #42b97d;
-}
-
-.btn .btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-
-.btn-primary {
-    background: #42b97d;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-color: #42b97d;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary .active, .open > .dropdown-toggle .btn-primary {
-    background: #338479;
-}
-
-.btn-primary:active, .btn-primary .active {
-    background: #338479;
-    box-shadow: none;
-}
-
-.btn-default {
-    background: #ffffff;
-    color: #42b97d;
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-color: #42b97d;
-}
-
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default .active, .open > .dropdown-toggle .btn-default {
-    background: #ffffff;
-}
-
-.btn-default:active, .btn-default .active {
-    background: #338479;
-    box-shadow: none;
-}
-
-/* Links */
-a {
-    color: #42b97d;
-    word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-    color: #2bd1a0;
-    text-decoration: none;
-    outline: 0;
-}
-
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #42b97d;
-    padding: 0;
-}
-
-/* Helpers */
-.centered {
-    text-align: center;
-}
-
-.mt {
-	margin-top: 40px;	
-}
-
-.mt-20{
-    margin-top: 20px;
-}
-
-.mt-50{
-    margin-top: 50px;
-}
-
-.mt-100 {
-	margin-top: 140px;	
-}
-
-.mb {
-    margin-bottom: 40px;
-}
 
 .pad-msg{
     padding-top: 30%;
 }
+
 
 .service{
     /* border-color: #eaeaea;*/
@@ -155,6 +17,7 @@ a:after {
     min-height: 250px;
 }
 
+
 .testimonial {
     padding: 30px;
     font-size: 12px;
@@ -162,6 +25,7 @@ a:after {
     font-style: italic;
     text-align: left;
 }
+
 
 .testimonial p {
     font-family: 'Open Sans', sans-serif;
@@ -172,11 +36,13 @@ a:after {
     line-height: 22px;
 }
 
+
 .testimonial-ref{
     font-weight:700;
     font-style: normal;
     color: #42b97d;
 }
+
 
 .testimonial-ref p {
     font-size: 14px;
@@ -184,6 +50,7 @@ a:after {
     font-style: normal;
     text-align: right;
 }
+
 
 .testimonial-ref a {
     font-size: 14px;
@@ -193,6 +60,7 @@ a:after {
     color: #42b97d;
 }
 
+
 .testimonial-ref p .ref-role  {
     font-size: 14px;
     font-weight: 700;
@@ -200,6 +68,7 @@ a:after {
     text-align: right;
     color: #404040;
 }
+
 
 .heropage {
     font-family: 'Open Sans', sans-serif;
@@ -217,9 +86,8 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
-    color: white;
 }
+
 
 .heropage h1{
     font-weight: 300;
@@ -227,6 +95,7 @@ a:after {
     margin-bottom: -2px;
     color: #404040;
 }
+
 
 .heropage .pitch p {
     margin-top: 1px;
@@ -237,21 +106,6 @@ a:after {
 	letter-spacing: 1px;
 }
 
-.footer {
-    background-color: #ffffff;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-    color: #404040;
-}
-
-.footer p{
-    background-color: #ffffff;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-    color: #404040;
-}
 
 @media (max-width: 543px){
 .heropage h1{
@@ -265,7 +119,7 @@ a:after {
     padding-bottom: 0px;
     margin-bottom: 10px;
     min-height: 20px;
-}
+    }
 }
 
 @media (min-width: 544px) and (max-width: 767px){   
@@ -280,7 +134,7 @@ a:after {
     padding-bottom: 0px;
     margin-bottom: 0px;
     min-height: 20px;
-}
+    }
 
 }
 
@@ -293,11 +147,13 @@ a:after {
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
+    }
 }
-}
+
 
 @media (min-width: 992px) and (max-width: 1199px) { 
 }
+
 
 @media (min-width: 1200px) { 
 }
