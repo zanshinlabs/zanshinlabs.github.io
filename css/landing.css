@@ -6,10 +6,6 @@ body {
   width: 100%;
 }
 
-.pad-msg{
-    padding-top: 32%;
-}
-
 
 .service{
     /* border-color: #eaeaea;*/
@@ -79,7 +75,7 @@ body {
     background-image:url('/images/background_tab.png');
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    min-height: auto;
+    /*min-height: auto;*/
     min-height: 100%;
     
     padding-top: 15%;
@@ -98,6 +94,16 @@ body {
     background-size: cover;
 }
 
+.heropage .hero-content {
+    position: absolute;
+    top: 50%;
+    left:0%;
+    right:0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
 
 .top-hr{
     margin-top: 0px;
@@ -125,6 +131,10 @@ body {
 @media (max-width: 543px){
 .heropage {
     background-image: url('/images/background_mob.png');
+    }
+
+.heropage .hero-content {
+    padding: 0 10px;
     }
 
 .heropage h1{
