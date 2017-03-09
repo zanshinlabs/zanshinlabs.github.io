@@ -96,7 +96,7 @@ body {
 
 .heropage .hero-content {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left:0%;
     right:0%;
     -webkit-transform: translateY(-50%);
