@@ -179,8 +179,15 @@ body {
 
 
 @media (min-width: 992px) and (max-width: 1199px) { 
+.pad-msg{
+    padding-top: 20%;
+    }
 }
 
 
 @media (min-width: 1200px) { 
+.pad-msg{
+    padding-top: 20%;
+    }
+
 }
