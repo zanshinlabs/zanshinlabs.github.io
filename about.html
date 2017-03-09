@@ -14,18 +14,24 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this site -->
-    <link href="css/main.css" rel="stylesheet">
+    <!-- Base styles for this site -->
+    <link href="css/base.css" rel="stylesheet">
+    
+    <!-- Navigation styles for this page -->
+    <link href="css/navigation.css" rel="stylesheet">
+    
+    <!-- Custom styles for this page -->
+    <link href="css/about.css" rel="stylesheet">
 
     <!-- Fonts from Google Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,900' rel='stylesheet' type='text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
+   <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,13 +40,15 @@
         ga('create', 'UA-83272936-1', 'auto');
         ga('send', 'pageview');
     </script>
+ 
     
 </head>
 
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-inner">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#zanshin-navbar" aria-expanded="false">
@@ -50,105 +58,94 @@
                 </button>
                 <a class="navbar-left" href="index.html"><img src="images/zl_logo_main_A02.png" alt="Zanshin Labs" class="image-responsive" width="150"></a>
             </div>
-
+            
             <div class="collapse navbar-collapse" id="zanshin-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#">Our story</a></li>
-                    <li><a href="nl_form.html">Newsletter</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contactus">Contact us</a></li>
-                </ul>
+                <div class="navbar-edge">
+                    <ul class="nav navbar-nav navbar-pad">
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="content.html"> Content</a></li>
+                        <li class="active"><a href="#"> About us</a></li>
+                    </ul>
+                    <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-default navbar-right navbar-btn hidden-xs" role="button" target="_blank"> Join our Newsletter</a>
+                </div>
             </div>
-            <!--/.nav-collapse -->
+            
+        </div>
         </div>
     </nav>
 
     
-    <div class="container mt">    
-       <div class="row mt">
-           <div class="centered">
-                    <div class="col-xs-12">
-				    <h1>Our story</h1>
-                    </div>
+    <div class="container mb">
+        <div class="row header-row" id="about">
+            <h2>Our team</h2>
+        </div>
+        <div class="row mt-50" id="john">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="col-xs-4">
+                    <img class="img-responsive center-block biopic" src="/images/biopic_john_large.jpg" width="160" alt="John's profile pic">
                 </div>
-			<div class="col-sm-5 col-sm-offset-1">
+                <div class="col-xs-8">
+                <h3>John Pagonis, PhD, UXC </h3>
+                <p>John Pagonis invested many years in developing smartphone OS software and having fun programming mobile VoIP, machine learning and recommender systems. He also used to teach university students how to program.</p> 
                 
-                <p>In evidence we trust because we are passionate- about learning, about improving, about discovering and solving the right problems. Our story is a story of continuous learning, learning from successes and learning from failures. </p>
-
-                <p>We founded Zanshin Labs because we hate to see good teams solve the wrong problems. We hate to see good teams struggle to solve the right problem ineffectively and it pains us to see organisations make decisions based on assumptions instead of evidence. We know how that is and how and when it happens because we have been there ourselves. </p> 
-                
-            </div>
-            <div class="col-sm-5">
-				<p> Zanshin Labs provides consulting, coaching and education to startup and established organisations building software based products and services to help them bring the right solution to the right problem, with highly productive teams, in their own unique way, by design rather than by happenstance.</p>
-
-                <p>We are adaptable, friendly, disciplined and collaborative. We also use too many post-its, but hey, nobody is perfect!</p>
-			</div>
-		</div><!-- /row -->
-    </div>
-    <!-- /container -->
-    
-    <hr>
-    <div class="container">
-        <div class="row centered standfirst">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2>WHO WE ARE</h2>
-                
-            </div>
-        </div>
-        <!-- /row -->
-    </div>
-    
-    <div class="container">
-          <div class="row mt">
-            <div class="col-sm-4 col-sm-offset-1">
-                <img class="img-responsive center-block" src="/images/zanshinlabs_john.jpg" width="140" alt="John's profile pic">
-                <h4 class="centered">John</h4>
-                <p>John Pagonis invested many years developing smartphone OS software and having fun programming mobile VoIP, machine learning and recommender systems. He also used to teach university students how to program. When he grows up he wants to become a great software engineer and score a win over information overload. In the meantime, he helps organisations develop better software and discover what they really ought to focus on. </p>
+                <p> When he grows up he wants to become a great software engineer and score a win over information overload. In the meantime, he helps organisations produce better software and discover what they really ought to focus on. John has a PhD, MSc and BEng from the University of Essex and is a certified UX researcher from Nielsen Norman Group.</p>
                 <p><a href="https://uk.linkedin.com/in/johnpagonis">in<i class="glyphicon glyphicon-user"></i></a></p>
+                </div>
             </div>
-            <!--/col-sm-4 -->
-
-            <div class="col-sm-4 col-sm-offset-2">
-                <img class="img-responsive center-block" src="/images/zanshinlabs_sotiris.jpg" width="140" alt="Sotiris' profile pic">
-                <h4 class="centered">Sotiris</h4>
-                <p>Sotiris Sotiropoulos spent his early professional life creating user interfaces and graphics for videogames and later for Web and mobile apps. In his quest to justify everyday design decisions, he discovered that user experience design provided answers; very good answers. This led him to the relentless pursuit of learning, which helped him enhance his ever-adaptable way. To Sotiris, it is apparent that designs aimed at people can only be crafted by understanding ...people.</p>
-                <p><a href="https://gr.linkedin.com/pub/sotiris-sotiropoulos/40/a06/2b2">in<i class="glyphicon glyphicon-user"></i></a></p>
-            </div>
-            <!--/col-sm-4 -->
         </div>
-    </div> <!-- /container --> 
-    
+        
+        <div class="row mt-50 mb" id="sotiris">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="col-xs-4">
+                    <img class="img-responsive center-block biopic" src="/images/biopic_sotiris_large.jpg" width="160" alt="John's profile pic">
+                </div>
+                <div class="col-xs-8">
+                <h3>Sotiris Sotiropoulos, UXC </h3>
+                <p>Sotiris Sotiropoulos spent his early professional life creating user interfaces and graphics for videogames and later for Web and mobile apps. In his quest to justify everyday design decisions, he discovered that user experience design provided answers; very good answers.</p> 
+                <p>This led him to the relentless pursuit of learning, which helped him enhance his ever-adaptable way. To Sotiris, it is apparent that designs aimed at people can only be crafted by understanding ...people. He is also a certified UX researcher from Nielsen Norman Group.</p>
+                <p><a href="https://gr.linkedin.com/pub/sotiris-sotiropoulos">in<i class="glyphicon glyphicon-user"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <hr>
-       <div class="container">
-        <div class="row mt centered">
-            <h1>Proud Platinum Sponsor of <br> Agile Greece Summit 2016</h1>
+    <div class="container mb">
+        <div class="row header-row" id="story">
+            <h2>Our story</h2>
         </div>
-        <div class="row mt mb centered">
-            <div class="col-sm-6 col-sm-offset-3">
-                <a href="http://agilesummit.gr/">
-                    <img src="images/Agile_Summit_250x250-2-w_outline.png" class="image-responsive" width="250">
+        <div class="row mt-50 mb">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <p class="story-paragraph">In evidence we trust because we are passionate about learning, about improving, about discovering and solving the right problems. Our story is a story of continuous learning, learning from successes and learning from failures. </p>
+            
+                <p class="story-paragraph">We founded Zanshin Labs because we hate to see good teams solve the wrong problems. We hate to see good teams struggle to solve the right problem ineffectively and it pains us to see organisations make decisions based on assumptions instead of evidence. We know how that is and how and when it happens because we have been there ourselves. </p> 
+                
+                <p class="story-paragraph">Zanshin Labs provides consulting, coaching and education to startup and enterprises building software based products and services to help them bring the right solution to the right problem, with highly productive teams, in their own unique way, by design rather than by happenstance.</p>
+
+                <img class="img-responsive center-block eventpic" src="/images/eventPic_02.jpg" width="80%" alt="John's profile pic">
+                
+                <p class="story-paragraph">We are adaptable, friendly, disciplined and collaborative. We also use too many post-its, but hey, nobody is perfect!</p>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="container mb">
+        <div class="row header-row" id="contact">
+            <h2>Contact us</h2>
+        </div>
+        <div class="row mt-50 mb centered" id="hi">
+            <p><a href="mailto:hi@zanhsinlabs.io">
+                <span class="mailto"><i class="glyphicon glyphicon-envelope"></i> hi@zanshinlabs.io &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </a>
-            </div>
+            </p>
         </div>
     </div>
-
-
-    <hr>
-    <div class="container" id="contactus">
-        <div class="row text-center">
-            <div class="col-sm-4 col-sm-offset-4">
-                <p>To contact us send an email to <a href="mailto:hi@zanshinlabs.io">hi at zanshinlabs dot io</a> and we will reply asap.</p>
-            </div>
-        </div>
-        <!-- /row -->
-    </div>
-    <!-- /container -->
-
     
+    <hr>
     <div class="footer">
-        <div class="container centered">
-        <p>Copyright 2016, Zanshin Labs Ltd, 284a Chase Rd, N146HF, London, England. reg no: 9913937</p>
+        <div class="container mt centered">
+        <p>&copy; 2016-2017, Zanshin Labs Ltd, 284a Chase Rd, N146HF, London, England. &middot; reg no: 9913937 &middot; <a href="https://twitter.com/Zanshinlabs" target="_blank">twitter</a> &middot; <a href="mailto:hi@zanshinlabs.io">e-mail</a> </p>
         </div>
     </div>
     <!-- /container -->
@@ -160,6 +157,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 
+    
 
 </body>
 

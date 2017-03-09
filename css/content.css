@@ -1,48 +1,5 @@
 /* Copyright 2016-2017, Zanshin Labs Ltd  */
 
-body {
-    padding-top: 40px;   /* due to the fixed navbar */ 
-}
-
-
-.navbar-default {
-    padding-top: 10px;
-    padding-bottom: 12px;
-	background-color: #ffffff;
-	border-color: transparent;
-    color: #42b97d;
-}
-
-
-.navbar-default .navbar-brand {
-	color: #42b97d;
-}
-
-
-.navbar-default .navbar-brand > b {
-    font-weight: 400;
-	color: #42b97d;
-}
-
-
-.navbar-default .navbar-nav > li > a {
-    font-size: 14px;
-    font-weight: 400;
-	color: #42b97d;
-}
-
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    background: #42b97d;
-    color: #ffffff;
-}
-
-
-.navbar-edge {
-    padding-right: 100px;
-}
-
-
 .content_entry{
     padding-bottom: 25px;   
 }
@@ -62,24 +19,20 @@ body {
 
 
 @media (max-width: 543px){
-.navbar-collapse {
-    border-bottom: 2px solid;
-    }
-
 }
 
+
 @media (min-width: 544px) and (max-width: 767px){  
-    .navbar-collapse {
-    border-bottom: 2px solid;
-    }
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) { 
 }
 
+
 @media (min-width: 992px) and (max-width: 1199px) { 
 }
+
 
 @media (min-width: 1200px) { 
 }

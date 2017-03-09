@@ -1,0 +1,21 @@
+/* Copyright 2016-2017, Zanshin Labs Ltd  */
+
+
+.biopic {
+    padding-top: 20px;
+}
+
+.eventpic {
+    padding-bottom:20px;
+}
+
+.mailto {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #404040;
+    font-size: 19px;
+}
+
+.story-paragraph {
+    margin-bottom: 30px;
+}

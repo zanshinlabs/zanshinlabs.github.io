@@ -14,8 +14,11 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this site -->
+    <!-- Base styles for this site -->
     <link href="css/base.css" rel="stylesheet">
+    
+    <!-- Navigation styles for this page -->
+    <link href="css/navigation.css" rel="stylesheet">
     
     <!-- Custom styles for this page -->
     <link href="css/content.css" rel="stylesheet">
@@ -45,6 +48,7 @@
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-inner">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#zanshin-navbar" aria-expanded="false">
@@ -56,22 +60,25 @@
             </div>
             
             <div class="collapse navbar-collapse" id="zanshin-navbar">
-                <div class="navbar-right navbar-edge">
-                    <ul class="nav navbar-nav">
+                <div class="navbar-edge">
+                    <ul class="nav navbar-nav navbar-pad">
                         <li><a href="index.html"> Home</a></li>
+                        <li class="active"><a href="#"> Content</a></li>
+                        <li><a href="about.html"> About us</a></li>
                     </ul>
-                
-                    <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-default navbar-btn" role="button" target="_blank"> Join our Newsletter</a>
-                
+                    <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-default navbar-right navbar-btn hidden-xs" role="button" target="_blank"> Join our Newsletter</a>
                 </div>
+            </div>
+            
+        </div>
         </div>
     </nav>
 
     
     <div class="container" id="nl_issues">
-        <div class="row mt-50">
-            <div class="col-sm-10 col-sm-offset-1 centered">
-                <h2 class="mb">Newsletter issues</h2>
+        <div class="row header-row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h2>Newsletter issues</h2>
             </div>
         </div>
         
@@ -185,17 +192,17 @@
             </div>
         </div>
         
-        <div class="row centered mb">
+        <div class="row centered">
             <div class="col-sm-4 col-sm-offset-4">
-                <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-primary navbar-btn" role="button" target="_blank"> Join our Newsletter</a>
+                <a href="http://zanshinlabs.us12.list-manage2.com/subscribe?u=3fc66885067a32c28d4ddc61c&id=31f582a7f7" class="btn btn-primary navbar-btn hidden-md hidden-lg mb" role="button" target="_blank"> Join our Newsletter</a>
             </div>
         </div>
     </div>
     
     <div class="container" id="presentations">
-        <div class="row mt-50" >
-            <div class="col-sm-10 col-sm-offset-1 centered">
-                <h2 class="mb">Presentations</h2>
+        <div class="row header-row" >
+            <div class="col-sm-10 col-sm-offset-1">
+                <h2>Presentations</h2>
             </div>
         </div>
         <div class="row content_entry">
@@ -288,10 +295,10 @@
         
     </div>
     
-    <div class="container" id="articles">
-        <div class="row mt-50">
-            <div class="col-sm-10 col-sm-offset-1 centered">
-                <h2 class="mb">Articles</h2>
+    <div class="container mb" id="articles">
+        <div class="row header-row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h2>Articles</h2>
             </div>
         </div>
         
@@ -431,10 +438,10 @@
     
     
     
-    
+    <hr>
     <div class="footer">
         <div class="container mt centered">
-        <p>&copy; 2016-2017, Zanshin Labs Ltd, 284a Chase Rd, N146HF, London, England. &middot; reg no: 9913937 &middot; <a href="https://twitter.com/Zanshinlabs" target="_blank">Twitter</a> &middot; <a href="mailto:hi@zanshinlabs.io">e-mail</a> </p>
+        <p>&copy; 2016-2017, Zanshin Labs Ltd, 284a Chase Rd, N146HF, London, England. &middot; reg no: 9913937 &middot; <a href="https://twitter.com/Zanshinlabs" target="_blank">twitter</a> &middot; <a href="mailto:hi@zanshinlabs.io">e-mail</a> </p>
         </div>
     </div>
     <!-- /container -->

@@ -82,6 +82,11 @@ a:after {
     padding: 0;
 }
 
+.header-row {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 /* Helpers */
 .centered {
@@ -101,6 +106,10 @@ a:after {
 
 .mt-50{
     margin-top: 50px;
+}
+
+.mt-75{
+    margin-top: 75px;
 }
 
 
